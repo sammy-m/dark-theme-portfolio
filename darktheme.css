@@ -1,5 +1,8 @@
 @charset "utf-8";
 /* CSS Document */
+html{
+	scroll-behavior: smooth;
+}
 
 html, body{
 	padding: 0 !important;
@@ -36,6 +39,9 @@ nav,
 section {
   display: block;
 }
+.mt-30{
+	margin-top: 30px;
+}
 body{
 	margin: 0;
 	font-family: "Nunito", sans-serif;
@@ -45,13 +51,106 @@ body{
 }
 
 nav{
-	height: 70px;
+	height: 80px;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+	background-color: rgba(0,0,0,0.0);
+	display: flex !important;
+	padding-left: 3%;
+	padding-right: 2%;
+	align-items: center;
+	transition: all 0.6s ease-in-out;
+	
+}
+.nav-tinted{
+	background-color: rgba(0,0,0,0.9);
+	height: 70px !important;
+}
+.nav-container{
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+}
+nav .nav-container .colapsible-nav{
+	/*background-color: blueviolet;*/
+	display: flex;
+	position: relative;
+	min-height: 30px;
+	
+	
+}
+nav .nav-container .colapsible-nav ul{
+	list-style: none;
+	
+}
+.colapsible-nav ul li a{
+	color: white;
+}
+.colapsible-nav ul li a:hover, .colapsible-nav ul li:hover a{
+	color: yellow !important;
+	text-decoration: none;
+}
+.visible-menu{
+	display: block !important;
+	transition: all 0.6s ease-in-out;
+	visibility: visible!important;
+}
+.menu-button{
+	display: flex;
+	flex-flow: column;
+	/*background-color: red;*/
+	width: 30px;
+	padding-left: 0px;
+	padding-top: 5px;
+	position: absolute;
+	right: 30px;
+	visibility: hidden;
+}
+.menu-button .m-btn-slice{
+	line-height: 2px;
+	margin-top: 5px;
+	color: white;
+	font-size: 55px;
+	transform: scaleX(1.5);
+	cursor: pointer;
+	
+}
+.menu-button:hover span[class ="m-btn-slices"]{
+	background-color: yellow !important;
+}
+.m-btn-slices{
+	width: 25px;
+	height: 3px;
+	background-color: white;
+	margin: 1.5px;
+	border-radius: 15% 15% 15% 15%;
+	
+	}
+
+.navbar-navs{
+	display: flex;
+	width: 40%;
+	max-width: 500px;
+	min-width: 300px;
+	/*justify-content: space-around;*/
+	/*background-color: aqua;*/
+	
+}
+.navbar-navs .nav-item{
+	text-decoration: none;
+	text-emphasis: none;
+	color: white !important;
+	margin-left: auto;
+	margin-right: auto;
+	
+	
 }
 .row{
 	margin: 0 !important;
 }
 .container{
-	background-color: aqua;
+	/*background-color: aqua;*/
 	margin: 0 !important;
 	padding: 0!important;
 	width: 100%;
@@ -61,10 +160,16 @@ nav{
 .landing{
 	background-color: black;
 	color: white;
-	height: calc(100vh - 70px) !important;
+	display: flex;
+	height: calc(100vh - 0px) !important;
+	background-image: url(images/intro2.png);
+	background-repeat: no-repeat;
+	background-position: 80% 0%;
+	background-size: auto 100vh;
 }
 .intro-writeup{
-	margin: auto !important;
+	margin-top: auto !important;
+	margin-bottom: auto;
 	
 }
 .about{
@@ -72,7 +177,11 @@ nav{
 	background-color: yellow;
 	padding: 70px 5% 50px 5%;
 }
-.about .row .b-left, .about .row .b-right{
+.about .row .b-left{
+	min-height: calc(100vh / 2);
+	padding: 30px 20px 30px 20px;
+}
+.about .row .b-right{
 	min-height: calc(100vh / 2);
 	padding: 30px 30px 30px 40px;
 }
@@ -123,15 +232,241 @@ nav{
 .databases::before{
 	content: url(images/icons/databases.svg);
 }
+.wwm{
+	color: white;
+	text-align: center;
+	padding: 30px;
+	height: 490px;
+	display: flex;
+	background-color: blueviolet;
+}
+.wwm .cta{
+	margin: auto;
+}
+.cta h2{
+	text-transform: uppercase;
+	font-size: 45px;
+	font-weight: 900;
+	line-height: 60px;
+}
+.dt-button{
+	border: 2px solid white;
+	padding: 10px 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin: 30px auto;
+	cursor: pointer;
+	max-width: 300px;
+	width: max-content;
+	display: block;
+}
 .work{
-	height: 100vh;
+	min-height: 100vh;
 	background-color: black;
+	color: white;
+	text-align: center;
+	padding-left: 2.5%;
+	padding-right: 2.5%;
+	padding-top: 100px;
+}
+.tiles{
+	 
+	padding: 50px 1%;
+	display: flex;
+	
+}
+.tiles .tile{
+	min-height: 290px;
+	width: 33.33%;
+	padding-bottom: 25%;
+	min-width: 300px;
+	position: relative;
+}
+.tiles .tile .w-desc{
+	position: absolute;
+	top: 15px;
+	bottom: 15px;
+	left: 15px;
+	right: 15px;
+	border: white 2px solid;
 }
 .contact{
 	min-height: 100vh;
-	background-color: orange;
+	background-color: black;
+	color: white;
+	
+	padding-top: 100px;
+	padding-bottom: 50px;
+	text-align: center;
+	padding-left: 3%;
+	padding-right: 3%;
+}
+.contact input{
+	background-color: transparent;
+	width: 100%;
+	border: #616161 1px solid;
+	color: white;
+	padding: 12px 18px;
+}
+.contact input::-webkit-input-placeholder, .contact textarea::-webkit-input-placeholder{
+	color: #616161 !important;
+}
+.contact input:-moz-placeholder, .contact textarea:-moz-placeholder{
+	color: #616161 !important;
+}
+.contact input::-moz-placeholder, .contact textarea::-moz-placeholder{
+	color: #616161 !important;
+}
+.contact input::placeholder, .contact textarea::placeholder{
+	color: #616161 !important;
+}
+
+.contact textarea{
+	background-color: transparent;
+	width: 100%;
+	border: #616161 1px solid;
+	color: white;
+	padding: 12px 18px;
+	min-height: 250px;
+}
+.contact textarea:focus ,.contact input:focus{
+	border-color: white;
 }
 .footer{
-	height: 150px;
-	background-color: rosybrown;
+	min-height: 150px;
+/*background-image: linear-gradient(to right,  rgba(190,11,215,0.8) -18.7%, rgba(246,234,11,0.9) 90.9% );*/
+	background-image: linear-gradient( 112.1deg,  rgba(0,0,0,1) -1.8%, rgba(248,135,13,1) 60.3%, rgba(245,253,35,1) 118% );
+
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
+.footer .social{
+	display: flex;
+	width: 50%;
+	/*background-color: yellow;*/
+	margin-left: auto;
+	margin-right: auto;
+	flex-wrap: nowrap;
+	justify-content: center;
+}
+.social a{
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+/*@media only screen and (max-width: 1083px){
+	.work{
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+}*/
+
+@media only screen and (max-width: 990px){
+	.tiles{
+		/*width: 90%;*/
+		padding-left: 15px;
+		padding-right: 15px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.tiles .tile{
+		width: 50%;
+		padding-bottom: 40%;
+	}
+	.navbar-navs{
+		/*display: none;*/
+	}
+	.menu-button{
+		visibility: visible;
+	}
+	#menuList{
+		position: fixed;
+		background: #FFF;
+		top: 70px;
+		right: 0;
+		width: 100%;
+		/*display: block;*/
+		height: calc(100vh - 70px);
+		text-align: center;
+		padding-top: 100px;
+		visibility: hidden;
+		transition: all 0.6s ease-in-out;
+	}
+	.colapsible-nav ul{
+		display: none;
+	}
+	#menuList li{
+		box-sizing: border-box;
+		padding: 12px 20px;
+		margin: auto;
+		/*border-top: 1px rgba(81,81,81,0.51) solid;*/
+		color: #000000 !important;
+	}
+	#menuList li a{
+		color: #000000 !important;
+		font-size: 24px;
+	}
+	#menuList li a:hover, #menuList li a:active{
+		color: yellow !important;
+	}
+}
+@media only screen and (max-width: 768px){
+	.tiles{
+		/*width: 90%;*/
+		padding-left: 35px;
+		padding-right: 35px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.tiles .tile{
+		width: 100%;
+		padding-bottom: 85%;
+	}
+}
+@media only screen and (max-width: 430px){
+	.tiles{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.tiles .tile{
+		min-width: 200px;
+	}
+	
+}
+@media only screen and (max-width: 300px){
+	.wwm{
+		padding: 20px 2%;
+	}
+}
+@media only screen and (max-width: 265px){
+	.dt-button{
+		margin: 0 auto;
+		padding-left: 2px;
+		padding-right: 2px;
+	}
+}
+/*@media only screen and (max-width: 500px){
+	.landing{
+		background-image: url(images/introiphone6p.png);
+		background-position: center center;
+		background-size: 500px auto;
+		
+	}
+}
+@media only screen and (max-width: 400px){
+	.landing{
+		background-image: url(images/introiphone6p.png);
+		background-position: center center;
+		background-size: 400px auto;
+		
+	}
+}
+@media only screen and (max-width: 300px){
+	.landing{
+		background-image: url(images/introiphone6p.png);
+		background-position: center 40%;
+		background-size: 350px auto;
+		
+	}
+}*/

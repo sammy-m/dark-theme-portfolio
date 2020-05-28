@@ -2,11 +2,11 @@
 <html>
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Sam | Lucid portfolio</title>
 <link rel="stylesheet" type="text/css" href="darktheme.css">
 <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-<style type="text/css">
-</style>
+<script type="application/javascript" src="js/darktheme.js"></script>
 </head>
 
 <body>
@@ -14,9 +14,28 @@
 			
 <div class="container">
 	  <nav>
+		  <div class="logo">
+      <a href="/">  <img src="images/icons/eu.png" alt="SAM.LOGO" id="logo" height="50"> </a>  
+    </div>
+		  <div class="nav-container">
+			   <div class="colapsible-nav">
+				   <div id="menuBtn" class="menu-button">
+				   <span class="m-btn-slices"></span>
+					<span class="m-btn-slices"></span>
+					<span class="m-btn-slices"></span>
+					   
+				   </div>
+			  	<ul id="menuList" class="ml-auto navbar-navs">
+					<li class="nav-item"><a id="home" href="#home">Home</a></li>
+					<li class="nav-item"> <a id="about" href="#about">About</a></li>
+					<li class="nav-item"><a id="work" href="#work">Work</a></li>
+					<li class="nav-item"><a id="contacts" href="#contacts">Contacts</a></li>
+				</ul>
+			  </div>
+		  </div>
 		</nav>
 		<div class="content">
-			<div class="landing">
+			<div class="landing" id="phome">
 			  <div class="intro-writeup">		  <h1>Hello</h1>
 					<h2>I am Sam</h2>
 					<p>I do amazing software design.</p>
@@ -25,7 +44,7 @@
 					
 				
 			</div>
-			<div class="about">
+			<div class="about" id="pabout">
 				<div class="row">
 					<div class="col-md-12 col-lg-6 b-left">
 						<div class="sec-header">
@@ -44,45 +63,59 @@
 					<h2>What I Do.</h2>
 					<p>I take pride in all that I do. With that in mind, I strive to ensure that perfection. Quality, I believe, is not debateable.</p>
 			<div class="row">
-				<div class="col-sm-6 s-mt">
+				<div class="col-md-6 col-sm-12 s-mt">
+					<div class="skill">
+						<div class="s-icon Programming"></div>
+						<h4>Programing</h4>
+						<p>Lorem ipsum dolor sit amet, autem vitae laboriosam vel nemo tenetur modi optio voluptatum ab deserunt.</p>
+					</div>
+					</div>
+				<div class="col-md-6 col-sm-12 s-mt">
+					<div class="skill">
+						<div class="s-icon algorithms"></div>
+						<h4>Algorithm Design</h4>
+						<p>Lorem ipsum dolor sit amet, autem vitae laboriosam vel nemo tenetur modi optio voluptatum ab deserunt.</p>
+					</div>
+					</div>
+				<div class="col-md-6 col-sm-12 s-mt">
 					<div class="skill">
 						<div class="s-icon web-design"></div>
 						<h4>Web Design</h4>
 						<p>Lorem ipsum dolor sit amet, autem vitae laboriosam vel nemo tenetur modi optio voluptatum ab deserunt.</p>
 					</div>
 					</div>
-				<div class="col-sm-6 s-mt">
+				<div class="col-md-6 col-sm-12 s-mt">
 					<div class="skill">
 						<div class="s-icon photoshop"></div>
 						<h4>Photoshop</h4>
 						<p>Lorem ipsum dolor sit amet, autem vitae laboriosam vel nemo tenetur modi optio voluptatum ab deserunt.</p>
 					</div>
 					</div>
-				<div class="col-sm-6 s-mt">
+				<div class="col-md-6 col-sm-12 s-mt">
 					<div class="skill">
 						<div class="s-icon graphic-design"></div>
 						<h4>Graphic Design</h4>
 						<p>Lorem ipsum dolor sit amet, autem vitae laboriosam vel nemo tenetur modi optio voluptatum ab deserunt.</p>
 					</div>
 					</div>
-				<div class="col-sm-6 s-mt">
+				<div class="col-md-6 col-sm-12 s-mt">
 					<div class="skill">
 						<div class="s-icon databases"></div>
 						<h4>Databases</h4>
 						<p>Lorem ipsum dolor sit amet, autem vitae laboriosam vel nemo tenetur modi optio voluptatum ab deserunt.</p>
 					</div>
 					</div>
-				<div class="col-sm-6 s-mt">
+				<div class="col-md-6 col-sm-12 s-mt">
 					<div class="skill">
-						<div class="s-icon"></div>
-						<h4>Web Design</h4>
+						<div class="s-icon seo"></div>
+						<h4>SEO</h4>
 						<p>Lorem ipsum dolor sit amet, autem vitae laboriosam vel nemo tenetur modi optio voluptatum ab deserunt.</p>
 					</div>
 					</div>
-				<div class="col-sm-6 s-mt">
+				<div class="col-md-6 col-sm-12 s-mt">
 					<div class="skill">
-						<div class="s-icon"></div>
-						<h4>Web Design</h4>
+						<div class="s-icon Cybersecurity"></div>
+						<h4>Cyber Security</h4>
 						<p>Lorem ipsum dolor sit amet, autem vitae laboriosam vel nemo tenetur modi optio voluptatum ab deserunt.</p>
 					</div>
 					</div>
@@ -90,14 +123,137 @@
 				</div>
 
 			</div>
-			<div class="work">
-				
+<div class="wwm">
+	<div class="cta">
+		<h2>Want to work with me?</h2>
+		<p>That is great! It would be a pleasure. Please share your idea with me by contacting me.</p> <br>
+		<span class="dt-button">
+		Let's work together!
+		</span>
+	</div>
+</div>
+			
+<div class="work" id="pwork">
+	<div class="recent-work">
+		<h2>Recent Work</h2>
+		<div class="row tiles">
+			<div class=" tile">
+				<div class="w-desc">
+				<h4>Work 1</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quos, </p>
+					
+				</div>
 			</div>
-			<div class="contact">
+			<div class="tile">
+				<div class="w-desc">
+				<h4>Work 1</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quos, </p>
+				</div>
+			</div>
+			<div class="tile">
+			<div class="w-desc">
+				<h4>Work 1</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quos, </p>
+				</div>
+			</div>
+			<div class="tile">
+			<div class="w-desc">
+				<h4>Work 1</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quos, </p>
+				</div>
+			</div>
+			<div class="tile">
+			<div class="w-desc">
+				<h4>Work 1</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quos, </p>
+				</div>
+			</div>
+			<div class="tile">
+			<div class="w-desc">
+				<h4>Work 1</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quos, </p>
+				</div>
+			</div>
+			<div class="tile">
+			<div class="w-desc">
+				<h4>Work 1</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quos, </p>
+				</div>
+			</div>
+			<div class="tile">
+			<div class="w-desc">
+				<h4>Work 1</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quos, </p>
+				</div>
+			</div>
+			<div class="tile">
+			<div class="w-desc">
+				<h4>Work 1</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quos, </p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="current-work">
+	
+	</div>
+
+</div>
+			<div class="contact" id="pcontacts">
+				<div class="call-cont">
+				<h2>Get Intouch</h2>
+				<p>I am always open to ideas, suggestions, invitations or any communication. Write me a message.</p>
+				</div>
+				<div class="contact-form">
+				<form action="#">
+					<div class="row">
+					<div class="col-sm-12 col-md-4 mt-30">
+						<input type="text" name="name" placeholder="Name">
+					</div>
+					<div class="col-sm-12 col-md-4 mt-30">
+						<input type="email" name="email" placeholder="Email">
+					</div>
+					<div class="col-sm-12 col-md-4 mt-30">
+						<input type="phone" name="phone" placeholder="Phone Number">
+					</div>
+					<div class="col-sm-12 col-lg-12 mt-30">
+						<input type="text" name="subject" placeholder="Subject">
+					</div>
+					<div class="col-sm-12 col-lg-12 mt-30">
+						<textarea name="message"  cols="30" rows="10" placeholder="Message"></textarea>
+					</div>
+					</div>	
+					<span class="dt-button">Send Message</span>
+				
+				</form>
+				</div>
 			</div>
 			
 		</div>
 	<div class="footer">
+		<div class="footer-logo">
+			<h2>SAM</h2>
+		</div>
+		<div class="copy">
+			<p>Copy Right &copy; By Sam 2020 &#124; All Rights Reserved </p>
+		</div>
+		<div class="social">
+			<a href="https://linkedin.com">
+			<img src="images/icons/linkedin.svg" alt="LinkedIn-Sam" width="15px">
+			</a>
+			<a href="https://github.com">
+			<img src="images/icons/github.svg" alt="GitHub-Sam" width="15px">
+			</a>
+			<a href="https://gmail.com">
+			<img src="images/icons/envelope.svg" alt="Email-Sam" width="15px">
+			</a>
+			<a href="https://facebook.com">
+			<img src="images/icons/facebook.svg" alt="Facebook-Sam" width="15px">
+			</a>
+			<a href="https://instagram.com">
+			<img src="images/icons/instagram.svg" alt="instagram-Sam" width="15px">
+			</a>
+		</div>
 	</div>
 	</div>
 	
