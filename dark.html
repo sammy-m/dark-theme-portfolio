@@ -6,7 +6,10 @@
 <title>Sam | Lucid portfolio</title>
 <link rel="stylesheet" type="text/css" href="darktheme.css">
 <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-<script type="application/javascript" src="js/darktheme.js"></script>
+<link rel="stylesheet" href="css/aos.css">
+<script src="js/aos.min.js"></script>
+<script src="js/darktheme.js"></script>
+	
 </head>
 
 <body>
@@ -26,7 +29,7 @@
 					   
 				   </div>
 			  	<ul id="menuList" class="ml-auto navbar-navs">
-					<li class="nav-item"><a id="home" href="#home">Home</a></li>
+					<li class="nav-item"><a class="active-link" id="home" href="#home">Home</a></li>
 					<li class="nav-item"> <a id="about" href="#about">About</a></li>
 					<li class="nav-item"><a id="work" href="#work">Work</a></li>
 					<li class="nav-item"><a id="contacts" href="#contacts">Contacts</a></li>
@@ -36,8 +39,10 @@
 		</nav>
 		<div class="content">
 			<div class="landing" id="phome">
-			  <div class="intro-writeup">		  <h1>Hello</h1>
-					<h2>I am Sam</h2>
+				<canvas></canvas>
+			  <div class="intro-writeup">
+			  	  <h1 id="greet"></h1>
+					<h2 id="nm"></h2>
 					<p>I do amazing software design.</p>
 				</div>
 				
@@ -47,73 +52,73 @@
 			<div class="about" id="pabout">
 				<div class="row">
 					<div class="col-md-12 col-lg-6 b-left">
-						<div class="sec-header">
+						<div class="sec-header" data-aos="fade-up" data-aos-duration="1000" >
 							<h2>Get To Know Me.</h2>
 						</div>
-						<div class="bio">
+						<div class="bio" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
 							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks necessary, making this the first true generator on the Internet model of text. Always free from repetition, injected humour, or non-characteristic wordsor non-characteristic words etc.
 							</p>
 						</div>
 					</div>
 					<div class="col-md-12 col-lg-6 b-right">
-					<img src="images/me.png" alt="sammy" width="400">
+					<img src="images/me.png"  alt="sammy" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="0" width="400">
 					</div>
 				</div>
 				<div class="skills">
-					<h2>What I Do.</h2>
-					<p>I take pride in all that I do. With that in mind, I strive to ensure that perfection. Quality, I believe, is not debateable.</p>
+					<h2 data-aos="fade-up" data-aos-duration="1000">What I Do.</h2>
+					<p data-aos="fade-up" data-aos-duration="1500">I take pride in all that I do. With that in mind, I strive to ensure that perfection. Quality, I believe, is not debateable.</p>
 			<div class="row">
 				<div class="col-md-6 col-sm-12 s-mt">
-					<div class="skill">
+					<div class="skill" data-aos="fade-up" data-aos-duration="1500">
 						<div class="s-icon Programming"></div>
 						<h4>Programing</h4>
 						<p>Lorem ipsum dolor sit amet, autem vitae laboriosam vel nemo tenetur modi optio voluptatum ab deserunt.</p>
 					</div>
 					</div>
 				<div class="col-md-6 col-sm-12 s-mt">
-					<div class="skill">
+					<div class="skill" data-aos="fade-up" data-aos-duration="1500">
 						<div class="s-icon algorithms"></div>
 						<h4>Algorithm Design</h4>
 						<p>Lorem ipsum dolor sit amet, autem vitae laboriosam vel nemo tenetur modi optio voluptatum ab deserunt.</p>
 					</div>
 					</div>
 				<div class="col-md-6 col-sm-12 s-mt">
-					<div class="skill">
+					<div class="skill" data-aos="fade-up" data-aos-duration="1500">
 						<div class="s-icon web-design"></div>
 						<h4>Web Design</h4>
 						<p>Lorem ipsum dolor sit amet, autem vitae laboriosam vel nemo tenetur modi optio voluptatum ab deserunt.</p>
 					</div>
 					</div>
 				<div class="col-md-6 col-sm-12 s-mt">
-					<div class="skill">
+					<div class="skill" data-aos="fade-up" data-aos-duration="1500">
 						<div class="s-icon photoshop"></div>
 						<h4>Photoshop</h4>
 						<p>Lorem ipsum dolor sit amet, autem vitae laboriosam vel nemo tenetur modi optio voluptatum ab deserunt.</p>
 					</div>
 					</div>
 				<div class="col-md-6 col-sm-12 s-mt">
-					<div class="skill">
+					<div class="skill" data-aos="fade-up" data-aos-duration="1500">
 						<div class="s-icon graphic-design"></div>
 						<h4>Graphic Design</h4>
 						<p>Lorem ipsum dolor sit amet, autem vitae laboriosam vel nemo tenetur modi optio voluptatum ab deserunt.</p>
 					</div>
 					</div>
 				<div class="col-md-6 col-sm-12 s-mt">
-					<div class="skill">
+					<div class="skill" data-aos="fade-up" data-aos-duration="1500">
 						<div class="s-icon databases"></div>
 						<h4>Databases</h4>
 						<p>Lorem ipsum dolor sit amet, autem vitae laboriosam vel nemo tenetur modi optio voluptatum ab deserunt.</p>
 					</div>
 					</div>
 				<div class="col-md-6 col-sm-12 s-mt">
-					<div class="skill">
+					<div class="skill" data-aos="fade-up" data-aos-duration="1500">
 						<div class="s-icon seo"></div>
 						<h4>SEO</h4>
 						<p>Lorem ipsum dolor sit amet, autem vitae laboriosam vel nemo tenetur modi optio voluptatum ab deserunt.</p>
 					</div>
 					</div>
 				<div class="col-md-6 col-sm-12 s-mt">
-					<div class="skill">
+					<div class="skill" data-aos="fade-up" data-aos-duration="1500">
 						<div class="s-icon Cybersecurity"></div>
 						<h4>Cyber Security</h4>
 						<p>Lorem ipsum dolor sit amet, autem vitae laboriosam vel nemo tenetur modi optio voluptatum ab deserunt.</p>
@@ -125,9 +130,9 @@
 			</div>
 <div class="wwm">
 	<div class="cta">
-		<h2>Want to work with me?</h2>
-		<p>That is great! It would be a pleasure. Please share your idea with me by contacting me.</p> <br>
-		<span class="dt-button">
+		<h2 data-aos="fade-up" data-aos-duration="1000">Want to work with me?</h2>
+		<p data-aos="fade-up" data-aos-duration="1500">That is great! It would be a pleasure. Please share your idea with me by contacting me.</p> <br>
+		<span id="wt" class="dt-button custom-bts" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
 		Let's work together!
 		</span>
 	</div>
@@ -135,58 +140,58 @@
 			
 <div class="work" id="pwork">
 	<div class="recent-work">
-		<h2>Recent Work</h2>
+		<h2 data-aos="fade-up" data-aos-duration="1000">Recent Work</h2>
 		<div class="row tiles">
-			<div class=" tile">
+			<div class=" tile" data-aos="fade-up" data-aos-duration="1500">
 				<div class="w-desc">
 				<h4>Work 1</h4>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quos, </p>
 					
 				</div>
 			</div>
-			<div class="tile">
+			<div class="tile" data-aos="fade-up" data-aos-duration="1500">
 				<div class="w-desc">
 				<h4>Work 1</h4>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quos, </p>
 				</div>
 			</div>
-			<div class="tile">
+			<div class="tile" data-aos="fade-up" data-aos-duration="1500">
 			<div class="w-desc">
 				<h4>Work 1</h4>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quos, </p>
 				</div>
 			</div>
-			<div class="tile">
+			<div class="tile" data-aos="fade-up" data-aos-duration="1500">
 			<div class="w-desc">
 				<h4>Work 1</h4>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quos, </p>
 				</div>
 			</div>
-			<div class="tile">
+			<div class="tile" data-aos="fade-up" data-aos-duration="1500">
 			<div class="w-desc">
 				<h4>Work 1</h4>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quos, </p>
 				</div>
 			</div>
-			<div class="tile">
+			<div class="tile" data-aos="fade-up" data-aos-duration="1500">
 			<div class="w-desc">
 				<h4>Work 1</h4>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quos, </p>
 				</div>
 			</div>
-			<div class="tile">
+			<div class="tile" data-aos="fade-up" data-aos-duration="1500">
 			<div class="w-desc">
 				<h4>Work 1</h4>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quos, </p>
 				</div>
 			</div>
-			<div class="tile">
+			<div class="tile" data-aos="fade-up" data-aos-duration="1500">
 			<div class="w-desc">
 				<h4>Work 1</h4>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quos, </p>
 				</div>
 			</div>
-			<div class="tile">
+			<div class="tile" data-aos="fade-up" data-aos-duration="1500">
 			<div class="w-desc">
 				<h4>Work 1</h4>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quos, </p>
@@ -201,29 +206,29 @@
 </div>
 			<div class="contact" id="pcontacts">
 				<div class="call-cont">
-				<h2>Get Intouch</h2>
-				<p>I am always open to ideas, suggestions, invitations or any communication. Write me a message.</p>
+				<h2 data-aos="fade-up" data-aos-duration="1000">Get Intouch</h2>
+				<p data-aos="fade-up" data-aos-duration="1500">I am always open to ideas, suggestions, invitations or any communication. Write me a message.</p>
 				</div>
 				<div class="contact-form">
 				<form action="#">
 					<div class="row">
 					<div class="col-sm-12 col-md-4 mt-30">
-						<input type="text" name="name" placeholder="Name">
+						<input data-aos="fade-up" data-aos-duration="1500" type="text" name="name" placeholder="Name">
 					</div>
 					<div class="col-sm-12 col-md-4 mt-30">
-						<input type="email" name="email" placeholder="Email">
+						<input data-aos="fade-up" data-aos-duration="1500" type="email" name="email" placeholder="Email">
 					</div>
 					<div class="col-sm-12 col-md-4 mt-30">
-						<input type="phone" name="phone" placeholder="Phone Number">
+						<input data-aos="fade-up" data-aos-duration="1500" type="phone" name="phone" placeholder="Phone Number">
 					</div>
 					<div class="col-sm-12 col-lg-12 mt-30">
-						<input type="text" name="subject" placeholder="Subject">
+						<input data-aos="fade-up" data-aos-duration="1500" type="text" name="subject" placeholder="Subject">
 					</div>
 					<div class="col-sm-12 col-lg-12 mt-30">
-						<textarea name="message"  cols="30" rows="10" placeholder="Message"></textarea>
+						<textarea data-aos="fade-up" data-aos-duration="1500" name="message"  cols="30" rows="10" placeholder="Message"></textarea>
 					</div>
 					</div>	
-					<span class="dt-button">Send Message</span>
+					<span class="dt-button custom-bt custom-bts" data-aos="fade-up" data-aos-duration="1500"><span>Send Message</span></span>
 				
 				</form>
 				</div>
@@ -231,31 +236,36 @@
 			
 		</div>
 	<div class="footer">
-		<div class="footer-logo">
+		<div class="footer-logo" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="0">
 			<h2>SAM</h2>
 		</div>
 		<div class="copy">
-			<p>Copy Right &copy; By Sam 2020 &#124; All Rights Reserved </p>
+			<p data-aos="fade-up" data-aos-duration="1500" data-aos-offset="0">Copy Right &copy; By Sam 2020 &#124; All Rights Reserved </p>
 		</div>
 		<div class="social">
-			<a href="https://linkedin.com">
+			<a href="https://linkedin.com" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="0">
 			<img src="images/icons/linkedin.svg" alt="LinkedIn-Sam" width="15px">
 			</a>
-			<a href="https://github.com">
+			<a href="https://github.com" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="0">
 			<img src="images/icons/github.svg" alt="GitHub-Sam" width="15px">
 			</a>
-			<a href="https://gmail.com">
+			<a href="https://gmail.com" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="0">
 			<img src="images/icons/envelope.svg" alt="Email-Sam" width="15px">
 			</a>
-			<a href="https://facebook.com">
+			<a href="https://facebook.com" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="0">
 			<img src="images/icons/facebook.svg" alt="Facebook-Sam" width="15px">
 			</a>
-			<a href="https://instagram.com">
+			<a href="https://instagram.com" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="0">
 			<img src="images/icons/instagram.svg" alt="instagram-Sam" width="15px">
 			</a>
 		</div>
 	</div>
 	</div>
+	
+	<script type="application/javascript">
+	
+		
+	</script>
 	
 </body>
 	
