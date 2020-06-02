@@ -7,8 +7,11 @@
 <link rel="stylesheet" type="text/css" href="darktheme.css">
 <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" href="css/aos.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+
 <script src="js/aos.min.js"></script>
 <script src="js/darktheme.js"></script>
+<script src="js/long-shadow.js"></script>
 	
 </head>
 
@@ -18,7 +21,7 @@
 <div class="container">
 	  <nav>
 		  <div class="logo">
-      <a href="/">  <img src="images/icons/eu.png" alt="SAM.LOGO" id="logo" height="50"> </a>  
+      <a href="/">  <img src="images/icons/logo.svg" alt="SAM.LOGO" id="logo" height="50"> </a>  
     </div>
 		  <div class="nav-container">
 			   <div class="colapsible-nav">
@@ -39,7 +42,7 @@
 		</nav>
 		<div class="content">
 			<div class="landing" id="phome">
-				<canvas></canvas>
+				<canvas id="canvas"></canvas>
 			  <div class="intro-writeup">
 			  	  <h1 id="greet"></h1>
 					<h2 id="nm"></h2>
@@ -66,11 +69,11 @@
 				</div>
 				<div class="skills">
 					<h2 data-aos="fade-up" data-aos-duration="1000">What I Do.</h2>
-					<p data-aos="fade-up" data-aos-duration="1500">I take pride in all that I do. With that in mind, I strive to ensure that perfection. Quality, I believe, is not debateable.</p>
+					<p data-aos="fade-up" data-aos-duration="1500">I take pride in all that I do. With that in mind, I strive to ensure perfection. Quality, I believe, is not debateable.</p>
 			<div class="row">
 				<div class="col-md-6 col-sm-12 s-mt">
 					<div class="skill" data-aos="fade-up" data-aos-duration="1500">
-						<div class="s-icon Programming"></div>
+						<div class="s-icon programing"></div>
 						<h4>Programing</h4>
 						<p>Lorem ipsum dolor sit amet, autem vitae laboriosam vel nemo tenetur modi optio voluptatum ab deserunt.</p>
 					</div>
@@ -142,11 +145,12 @@
 	<div class="recent-work">
 		<h2 data-aos="fade-up" data-aos-duration="1000">Recent Work</h2>
 		<div class="row tiles">
-			<div class=" tile" data-aos="fade-up" data-aos-duration="1500">
-				<div class="w-desc">
-				<h4>Work 1</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quos, </p>
-					
+			<div class=" tile tiler" id="tiler" data-aos="fade-up" data-aos-duration="1500">
+				<div class="w-desc wd">
+				<div class="wo-desc">
+					<h4>SEO</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quos, </p>
+				</div>					
 				</div>
 			</div>
 			<div class="tile" data-aos="fade-up" data-aos-duration="1500">
@@ -261,6 +265,8 @@
 		</div>
 	</div>
 	</div>
+	
+	<script src="js/ls.js"></script>
 	
 	<script type="application/javascript">
 	

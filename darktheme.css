@@ -39,6 +39,10 @@ nav,
 section {
   display: block;
 }
+p{
+	font-family: "Montserrat", sans-serif;
+	font-weight: 400;
+}
 .mt-30{
 	margin-top: 30px;
 }
@@ -178,7 +182,7 @@ nav .nav-container .colapsible-nav ul{
 	top: 0;
 	left: 0;
 	z-index: 1;
-	background-color: rgba(255, 45, 61, 0.5);
+	background-color: linear-gradient(toright,  rgba(0,0,0,1) -1.8%, rgba(248,135,13,1) 60.3%, rgba(245,253,35,1) 118%);
 }
 .intro-writeup{
 	margin-top: auto !important;
@@ -212,6 +216,10 @@ nav .nav-container .colapsible-nav ul{
 .about .row .b-right img:hover{
 	box-shadow: 0px 0px 0 orange;
 }
+.bio{
+	padding-top: 50px;
+	font-size: 20px !important;
+}
 .sec-header{
 	border-bottom: orange 2px solid;
 }
@@ -242,6 +250,18 @@ nav .nav-container .colapsible-nav ul{
 
 .web-design::before{
 	content: url(images/icons/webdesign.svg);
+}
+.programing::before{
+	content: url(images/icons/programming.svg);
+}
+.algorithms::before{
+	content: url(images/icons/algorithm.svg);
+}
+.seo::before{
+	content: url(images/icons/seo.svg);
+}
+.Cybersecurity::after{
+	content: url(images/icons/cyber-security.svg);
 }
 .photoshop::before{
 	content: url(images/icons/photoshop.svg);
@@ -333,7 +353,31 @@ nav .nav-container .colapsible-nav ul{
 	bottom: 15px;
 	left: 15px;
 	right: 15px;
-	border: white 2px solid;
+	border: white 1px solid;
+	border-radius: 10px;
+}
+.tiler{
+	position: relative;
+}
+.wo-desc{
+	position: absolute;
+	top: 20%;
+	border-radius: 10px 0px 10px 10px;
+	background-color: black;
+	height: 80%;
+	
+}
+.wd::before{
+	content: "";
+	position: absolute;
+	height: 40%;
+	background-image:  linear-gradient(to right, rgba(0,0,0,0.7) 0%, rgba(248,135,13,0.7) 60.3%, rgba(245,253,35, 0.7) 118%), url("images/sm-img/seo.png") ;
+	top: 0px;
+	width: 100%;
+	left: 0;
+	z-index: -1;
+	border-radius: 8px;
+	
 }
 .contact{
 	min-height: 100vh;
