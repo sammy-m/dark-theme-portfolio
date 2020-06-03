@@ -182,12 +182,13 @@ nav .nav-container .colapsible-nav ul{
 	top: 0;
 	left: 0;
 	z-index: 1;
-	background-color: linear-gradient(toright,  rgba(0,0,0,1) -1.8%, rgba(248,135,13,1) 60.3%, rgba(245,253,35,1) 118%);
+	background-image: linear-gradient(to right,  rgba(0,0,0,0.4) -1.8%, rgba(248,135,13,0.2) 60.3%, rgba(245,253,35,0.2) 118%);
 }
 .intro-writeup{
 	margin-top: auto !important;
 	margin-bottom: auto;
 	margin-right: auto;
+	margin-left: 5%;
 	z-index: 2
 	
 	
@@ -218,7 +219,7 @@ nav .nav-container .colapsible-nav ul{
 }
 .bio{
 	padding-top: 50px;
-	font-size: 20px !important;
+	font-size: 18px !important;
 }
 .sec-header{
 	border-bottom: orange 2px solid;
@@ -229,6 +230,7 @@ nav .nav-container .colapsible-nav ul{
 	color: white;
 	padding-left: 2%;
 	padding-right: 2%;
+	padding-top: 50px;
 }
 .skill{
 	text-align: left;
@@ -340,6 +342,7 @@ nav .nav-container .colapsible-nav ul{
 	display: flex;
 	
 }
+
 .tiles .tile{
 	min-height: 290px;
 	width: 33.33%;
@@ -353,7 +356,7 @@ nav .nav-container .colapsible-nav ul{
 	bottom: 15px;
 	left: 15px;
 	right: 15px;
-	border: white 1px solid;
+	border: black 1px solid;
 	border-radius: 10px;
 }
 .tiler{
@@ -363,21 +366,73 @@ nav .nav-container .colapsible-nav ul{
 	position: absolute;
 	top: 20%;
 	border-radius: 10px 0px 10px 10px;
-	background-color: black;
+	background-color: white;
+	color: black;
 	height: 80%;
+	width: 100%;
+	padding: 10px;
+}
+.wo-desc p{
+	color: #4F4F4F;
+	font-weight: 500;
+}
+.wo-desc a{
+	color: orangered !important;
+	font-weight: 500;
+}
+.wo-desc a:hover{
+	color: yellow !important;
+	text-decoration: none;
+	background-color: black;
 	
 }
 .wd::before{
 	content: "";
 	position: absolute;
 	height: 40%;
-	background-image:  linear-gradient(to right, rgba(0,0,0,0.7) 0%, rgba(248,135,13,0.7) 60.3%, rgba(245,253,35, 0.7) 118%), url("images/sm-img/seo.png") ;
 	top: 0px;
 	width: 100%;
 	left: 0;
 	z-index: -1;
 	border-radius: 8px;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
 	
+}
+.wd-seo::before{
+	background-image:  linear-gradient(to right, rgba(0,0,0,0.7) 0%, rgba(248,135,13,0.7) 60.3%, rgba(245,253,35, 0.7) 118%), url("images/sm-img/seo.png") ;
+}
+.wd-pmng::before{
+	background-image:  linear-gradient(to right, rgba(0,0,0,0.7) 0%, rgba(248,135,13,0.7) 60.3%, rgba(245,253,35, 0.7) 118%), url("images/sm-img/project-manager.png") ;
+	background-position: center;
+}
+.wd-sdev::before{
+	background-image:  linear-gradient(to right, rgba(0,0,0,0.7) 0%, rgba(248,135,13,0.7) 60.3%, rgba(245,253,35, 0.7) 118%), url("images/sm-img/sdeveloper.png") ;
+	background-position: center;
+}
+.wd-pdgn::before{
+	background-image:  linear-gradient(to right, rgba(0,0,0,0.7) 0%, rgba(248,135,13,0.7) 60.3%, rgba(245,253,35, 0.7) 118%), url("images/sm-img/pdsgn.png") ;
+	background-position: center;
+}
+.wd-gdgn::before{
+	background-image:  linear-gradient(to right, rgba(0,0,0,0.7) 0%, rgba(248,135,13,0.7) 60.3%, rgba(245,253,35, 0.7) 118%), url("images/sm-img/graphicdesign.png") ;
+	background-position: center;
+}
+.wd-lucid::before{
+	background-image:  linear-gradient(to right, rgba(0,0,0,0.7) 0%, rgba(248,135,13,0.7) 60.3%, rgba(245,253,35, 0.7) 118%), url("images/sm-img/startup.png") ;
+	background-position: bottom;
+}
+.wd-sdev-welf::before{
+	background-image:  linear-gradient(to right, rgba(0,0,0,0.7) 0%, rgba(248,135,13,0.7) 60.3%, rgba(245,253,35, 0.7) 118%), url("images/sm-img/sdeveloper.png") ;
+	background-position: center;
+}
+.wd-gadjet::before{
+	background-image:  linear-gradient(to right, rgba(0,0,0,0.7) 0%, rgba(248,135,13,0.7) 60.3%, rgba(245,253,35, 0.7) 118%), url("images/sm-img/startup.png") ;
+	
+}
+.wd-urban::before{
+	background-image:  linear-gradient(to right, rgba(0,0,0,0.7) 0%, rgba(248,135,13,0.7) 60.3%, rgba(245,253,35, 0.7) 118%), url("images/sm-img/startup1.png") ;
+	background-position: top;
 }
 .contact{
 	min-height: 100vh;
@@ -511,6 +566,9 @@ nav .nav-container .colapsible-nav ul{
 		margin-left: auto;
 		margin-right: auto;
 	}
+	
+}
+@media only screen and (max-width: 740px){
 	.tiles .tile{
 		width: 100%;
 		padding-bottom: 85%;
